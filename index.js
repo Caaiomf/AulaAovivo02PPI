@@ -5,11 +5,11 @@ const porta = 3001;
 
 const server = express();
 
-server.checkout("/", (requisicao,resposta) =>{
+server.get("/", (requisicao,resposta) =>{
     //disponibilizar o menu para o usuario
     resposta.send(`
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
